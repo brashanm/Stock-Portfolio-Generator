@@ -12,7 +12,7 @@ Creates an investment portfolio of ten S&P500 stocks that is considered risky.
   * Gets the yfinance data for each stock in the dataframe
   * Calculates the price, beta, standard deviation and returns to a single row dataframe and adds said dataframe to the main dataframe that was created at the beginning of the function
 * It then returns the final dataframe after escaping the threads
-## Strategy for choosing the 1 sinlge riskiest stock
+## Strategy for choosing the 1 single riskiest stock
 * We gathered 3 stocks with the highest standard deviation on monthly returns to be the riskiest stocks. From these 3 stocks, we calculated the riskiest stock to be the one with the highest beta value.
 * Stocks with high standard deviation are considered risky as they are stocks with high volatility and great fluctuations with prices. In addition, stocks with high beta values are considered risky as they are more volatile when compared to the overall market.
 * Since standard deviation and beta are both measures of riskiness and we wanted to take both into consideration. We did so by narrowing down the stocks to those that are risky in terms of standard deviation and then the one that is riskiest in terms of beta
